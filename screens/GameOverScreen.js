@@ -4,7 +4,7 @@ import Title from '../components/ui/Title'
 import Colors from '../constants/colors'
 import PrimaryButton from '../components/ui/PrimaryButton'
 
-const GameOverScreen = ({roundnumber, userNumber, OnStartNewGame}) => {
+const GameOverScreen = ({roundsNumber, userNumber, OnStartNewGame}) => {
   return (
     <View style={styles.routeContainer} >
       <Title>GAME OVER</Title>
@@ -17,7 +17,7 @@ const GameOverScreen = ({roundnumber, userNumber, OnStartNewGame}) => {
       <Text style={styles.smText} >
         You needed  
         <Text style={styles.highlight}>
-          {roundnumber} 
+          {roundsNumber} 
         </Text> 
           rounds to guess the number  
         <Text style={styles.highlight}>
