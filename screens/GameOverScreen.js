@@ -4,7 +4,7 @@ import Title from '../components/ui/Title'
 import Colors from '../constants/colors'
 import PrimaryButton from '../components/ui/PrimaryButton'
 
-const GameOver = () => {
+const GameOverScreen = ({roundnumber, userNumber, OnStartNewGame}) => {
   return (
     <View style={styles.routeContainer} >
       <Title>GAME OVER</Title>
@@ -17,19 +17,19 @@ const GameOver = () => {
       <Text style={styles.smText} >
         You needed  
         <Text style={styles.highlight}>
-          X 
+          {roundnumber} 
         </Text> 
           rounds to guess the number  
         <Text style={styles.highlight}>
-           Y 
+           {userNumber} 
         </Text>
       </Text>
-      <PrimaryButton>Start A New Game</PrimaryButton>
+      <PrimaryButton onPressbtn={OnStartNewGame}>Start A New Game</PrimaryButton>
     </View>
   )
 }
 
-export default GameOver
+export default GameOverScreen
 
 const styles = StyleSheet.create({
   routeContainer: {
