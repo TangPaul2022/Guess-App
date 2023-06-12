@@ -59,6 +59,9 @@ const styles = StyleSheet.create({
   },
   highlight: {
     fontFamily: 'gen-bb-bold',
-    color: Colors.primary500 
+    color: Colors.primary500 ,
+    margin: 5,
+    padding: 5,
+    
   },
 })
